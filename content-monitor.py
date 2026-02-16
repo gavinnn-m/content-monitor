@@ -29,12 +29,12 @@ except ImportError:
 
 
 class ContentMonitor:
-    def __init__(self, days=7, cache_hours=6):
+    def __init__(self, days=7, cache_hours=6, sources_file=None):
         self.days = days
         self.cache_hours = cache_hours
-        self.base_dir = Path(__file__).parent.parent
-        self.sources_file = self.base_dir / "content-sources.json"
-        self.cache_file = self.base_dir / "content" / "feed-cache.json"
+        self.base_dir = Path(__file__).parent
+        self.sources_file = Path(sources_file) if sources_file else self.base_dir / "content-sources.json"
+        self.cache_file = self.sources_file.parent / "content" / "feed-cache.json"
         self.cache_file.parent.mkdir(exist_ok=True)
         
         # Load sources
@@ -322,10 +322,11 @@ class ContentMonitor:
 def main():
     parser = argparse.ArgumentParser(description="Monitor RSS feeds for content ideas")
     parser.add_argument("--days", type=int, default=7, help="Days to look back (default: 7)")
+    parser.add_argument("--sources", type=str, default=None, help="Path to sources JSON (default: content-sources.json)")
     parser.add_argument("--json", action="store_true", help="Output JSON instead of human-readable")
     args = parser.parse_args()
     
-    monitor = ContentMonitor(days=args.days)
+    monitor = ContentMonitor(days=args.days, sources_file=args.sources)
     
     # Fetch feeds
     feeds_data = monitor.fetch_feeds()

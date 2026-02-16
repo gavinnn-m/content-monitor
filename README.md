@@ -29,12 +29,15 @@ python3 content-monitor.py --days 3
 
 ## Feed Sources
 
-Configured in `content-sources.json`. Categories:
-- **Telecom Industry** — Light Reading, Fierce Telecom, RCR Wireless, etc.
-- **AI & Enterprise** — The Verge AI, Ars Technica, MIT Tech Review, etc.
-- **Thought Leaders** — Simon Willison, Ben Thompson, Benedict Evans, etc.
-- **Reddit** — r/VoIP, r/telecom, r/artificial, r/LocalLLaMA, etc.
-- **Aggregators** — Hacker News, Techmeme
+Configured in `content-sources.json`. The included config has a few example feeds to get started. Add your own RSS/Atom feeds organized by category.
+
+To keep your real feed list private, copy to `content-sources.local.json` (gitignored) and point the script there with `--sources`.
+
+### Supported source types
+- RSS/Atom feeds (any standard feed URL)
+- Reddit subreddits (via `.rss` suffix)
+- YouTube channels (via `/feeds/videos.xml?channel_id=...`)
+- Any service that outputs RSS (RSS-Bridge, etc.)
 
 ## Authors
 

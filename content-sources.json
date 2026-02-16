@@ -2,197 +2,20 @@
     "version": 2,
     "updated": "2026-02-16",
     "sources": {
-        "telecom_industry": [
+        "industry": [
             {
-                "name": "No Jitter",
-                "url": "https://www.nojitter.com",
-                "feed": "https://www.nojitter.com/rss.xml",
-                "topics": [
-                    "ucaas",
-                    "ccaas",
-                    "telecom",
-                    "enterprise-comms"
-                ],
-                "notes": "Premier UC/collaboration trade pub"
+                "name": "Hacker News",
+                "url": "https://news.ycombinator.com",
+                "feed": "https://hnrss.org/frontpage",
+                "topics": ["tech", "startups", "ai"],
+                "notes": "Tech frontpage — catches viral posts early"
             },
             {
-                "name": "UC Today",
-                "url": "https://www.uctoday.com",
-                "feed": "https://www.uctoday.com/feed/",
-                "topics": [
-                    "ucaas",
-                    "ccaas",
-                    "telecom",
-                    "collaboration"
-                ],
-                "notes": "UK-based UC industry news, good global coverage"
-            },
-            {
-                "name": "CX Today",
-                "url": "https://www.cxtoday.com",
-                "feed": "https://www.cxtoday.com/feed/",
-                "topics": [
-                    "ccaas",
-                    "cx",
-                    "contact-center",
-                    "ai"
-                ],
-                "notes": "Sister site to UC Today, focused on customer experience"
-            },
-            {
-                "name": "Telecom Reseller",
-                "url": "https://telecomreseller.com",
-                "feed": "https://telecomreseller.com/feed/",
-                "topics": [
-                    "voip",
-                    "ucaas",
-                    "cpaas",
-                    "telecom"
-                ],
-                "notes": "Good channel/reseller perspective on UCaaS/CPaaS"
-            },
-            {
-                "name": "TalkingPointz",
-                "url": "https://talkingpointz.com",
-                "feed": "https://talkingpointz.com/feed/",
-                "topics": [
-                    "ucaas",
-                    "ccaas",
-                    "telecom",
-                    "analysis"
-                ],
-                "notes": "Dave Michels \u2014 independent UC analyst, sharp takes"
-            },
-            {
-                "name": "Cavell Group",
-                "url": "https://www.cavellgroup.com",
-                "feed": "https://www.cavellgroup.com/feed/",
-                "topics": [
-                    "ucaas",
-                    "ccaas",
-                    "cloud-comms",
-                    "market-data"
-                ],
-                "notes": "European cloud comms analyst firm"
-            },
-            {
-                "name": "Irwin Lazar",
-                "url": "https://irwinlazar.com",
-                "feed": "https://irwinlazar.com/feed/",
-                "topics": [
-                    "ucaas",
-                    "collaboration",
-                    "enterprise-comms"
-                ],
-                "notes": "Independent UC/collaboration analyst"
-            },
-            {
-                "name": "Channel Futures",
-                "url": "https://www.channelfutures.com",
-                "feed": "https://www.channelfutures.com/rss.xml",
-                "topics": [
-                    "channel",
-                    "msp",
-                    "telecom",
-                    "ucaas"
-                ],
-                "notes": "Channel partner and MSP industry news"
-            },
-            {
-                "name": "Fierce Network",
-                "url": "https://www.fierce-network.com",
-                "feed": "https://www.fierce-network.com/rss/xml",
-                "topics": [
-                    "telecom",
-                    "5g",
-                    "networking",
-                    "carriers"
-                ],
-                "notes": "Telecom/networking industry news"
-            },
-            {
-                "name": "Light Reading",
-                "url": "https://www.lightreading.com",
-                "feed": "https://www.lightreading.com/rss.xml",
-                "topics": [
-                    "telecom",
-                    "networking",
-                    "carriers",
-                    "5g"
-                ],
-                "notes": "Deep telecom/networking industry coverage"
-            },
-            {
-                "name": "Jeff Pulver",
-                "url": "https://thejeffpulver.substack.com",
-                "feed": "https://thejeffpulver.substack.com/feed",
-                "topics": [
-                    "voip",
-                    "telecom",
-                    "communications"
-                ],
-                "notes": "VoIP pioneer, inventor of Free World Dialup"
-            }
-        ],
-        "ai_enterprise": [
-            {
-                "name": "AI Business",
-                "url": "https://aibusiness.com",
-                "feed": "https://aibusiness.com/rss.xml",
-                "topics": [
-                    "ai",
-                    "enterprise-ai",
-                    "automation"
-                ],
-                "notes": "Enterprise AI news and analysis"
-            },
-            {
-                "name": "Customer Contact Week Digital",
-                "url": "https://www.customercontactweekdigital.com",
-                "feed": "https://www.customercontactweekdigital.com/rss/articles",
-                "topics": [
-                    "ccaas",
-                    "contact-center",
-                    "cx",
-                    "ai"
-                ],
-                "notes": "Contact center industry \u2014 AI, CX, workforce"
-            },
-            {
-                "name": "Genesys Blog",
-                "url": "https://www.genesys.com/blog",
-                "feed": "https://www.genesys.com/blog/feed",
-                "topics": [
-                    "ccaas",
-                    "contact-center",
-                    "ai",
-                    "cx"
-                ],
-                "notes": "Major CCaaS vendor, good AI-in-CX content"
-            },
-            {
-                "name": "Twilio Blog",
-                "url": "https://www.twilio.com/blog",
-                "feed": "https://www.twilio.com/en-us/blog.feed.xml",
-                "topics": [
-                    "cpaas",
-                    "voice",
-                    "ai",
-                    "communications"
-                ],
-                "notes": "CPaaS leader, comms APIs and AI"
-            },
-            {
-                "name": "RingCentral Blog",
-                "url": "https://www.ringcentral.com/blog",
-                "feed": "https://www.ringcentral.com/us/en/blog/feed/",
-                "topics": [
-                    "ucaas",
-                    "ccaas",
-                    "ai",
-                    "collaboration"
-                ],
-                "notes": "Major UCaaS/CCaaS vendor perspective"
+                "name": "Lobsters",
+                "url": "https://lobste.rs",
+                "feed": "https://lobste.rs/rss",
+                "topics": ["tech", "programming", "systems"],
+                "notes": "Curated tech links, higher signal than HN"
             }
         ],
         "thought_leaders": [
@@ -200,118 +23,35 @@
                 "name": "Simon Willison's Weblog",
                 "url": "https://simonwillison.net",
                 "feed": "https://simonwillison.net/atom/everything/",
-                "topics": [
-                    "ai",
-                    "llm",
-                    "dev-tools",
-                    "python"
-                ],
-                "notes": "Best practical AI/LLM coverage, no hype"
+                "topics": ["ai", "llm", "dev-tools", "python"],
+                "notes": "Practical AI/LLM coverage"
             },
             {
                 "name": "Stratechery",
                 "url": "https://stratechery.com",
                 "feed": "https://stratechery.com/feed/",
-                "topics": [
-                    "tech",
-                    "strategy",
-                    "business",
-                    "ai"
-                ],
-                "notes": "Ben Thompson \u2014 tech strategy analysis"
-            },
-            {
-                "name": "Platformer",
-                "url": "https://www.platformer.news",
-                "feed": "https://www.platformer.news/rss/",
-                "topics": [
-                    "tech",
-                    "policy",
-                    "platforms"
-                ],
-                "notes": "Casey Newton \u2014 tech/platform/policy"
-            },
-            {
-                "name": "The Verge",
-                "url": "https://www.theverge.com",
-                "feed": "https://www.theverge.com/rss/index.xml",
-                "topics": [
-                    "tech",
-                    "ai",
-                    "consumer"
-                ],
-                "notes": "Broad tech, good for catching mainstream trends"
-            },
-            {
-                "name": "Acquired Podcast",
-                "url": "https://www.acquired.fm",
-                "feed": "https://feeds.simplecast.com/JGE3yC0V",
-                "topics": [
-                    "tech",
-                    "business",
-                    "strategy"
-                ],
-                "notes": "Deep dives on tech companies and deals"
+                "topics": ["tech", "strategy", "business", "ai"],
+                "notes": "Ben Thompson — tech strategy analysis"
             }
         ],
-        "youtube": [
+        "reddit": [
             {
-                "name": "The AI Daily Brief",
-                "url": "https://www.youtube.com/@aidailybrief",
-                "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKelCK4ZaO6HeEI1KQjqzWA",
-                "topics": [
-                    "ai",
-                    "llm",
-                    "news",
-                    "dev-tools"
-                ],
-                "notes": "Daily AI news roundup \u2014 Matt's pick"
-            }
-        ],
-        "aggregators": [
-            {
-                "name": "Hacker News",
-                "url": "https://news.ycombinator.com",
-                "feed": "https://hnrss.org/frontpage",
-                "topics": [
-                    "tech",
-                    "ai",
-                    "startups"
-                ],
-                "notes": "Tech frontpage \u2014 catches viral posts early"
-            },
-            {
-                "name": "Lobsters",
-                "url": "https://lobste.rs",
-                "feed": "https://lobste.rs/rss",
-                "topics": [
-                    "tech",
-                    "programming",
-                    "systems"
-                ],
-                "notes": "Curated tech links, higher signal than HN"
+                "name": "r/technology",
+                "url": "https://www.reddit.com/r/technology",
+                "feed": "https://www.reddit.com/r/technology/.rss",
+                "topics": ["tech", "policy", "industry"],
+                "notes": "General tech news and discussion"
             }
         ]
     },
     "topic_weights": {
-        "voip": 1.0,
-        "telecom": 1.0,
-        "vcon": 1.0,
-        "ucaas": 1.0,
-        "ccaas": 1.0,
-        "cpaas": 0.9,
-        "contact-center": 1.0,
-        "cx": 0.9,
-        "voice-intelligence": 1.0,
-        "ai": 0.9,
-        "ai-agents": 0.9,
-        "automation": 0.8,
-        "dev-tools": 0.7,
-        "engineering": 0.7,
-        "business": 0.5,
+        "ai": 1.0,
+        "llm": 1.0,
+        "tech": 0.7,
+        "startups": 0.6,
+        "dev-tools": 0.8,
+        "programming": 0.7,
         "strategy": 0.6,
-        "channel": 0.7,
-        "msp": 0.7,
-        "vc": 0.4
+        "business": 0.5
     }
 }
