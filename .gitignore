@@ -1,0 +1,11 @@
+# Cache
+feed-cache.json
+content/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
